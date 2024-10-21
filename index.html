@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lara Central de Tratamento de Resíduos: empresa especializada em coleta domiciliar, varrição, gerenciamento de resíduos e sustentabilidade.">
+        <meta name="keywords" content="Lara, tratamento de resíduos, coleta domiciliar, varrição, sustentabilidade, resíduos sólidos, resíduos industriais, gerenciamento de resíduos">
+        <meta name="author" content="Bianca Pereira Leão">
+        
+        <link rel="icon" href="/img/logo.png">
+        <link rel="apple-touch-icon" href="/img/logo.png">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/menu.css">
+        <link rel="stylesheet" href="/css/carrossel.css">
+        
+        <script src="https://kit.fontawesome.com/94e8bd423f.js" crossorigin="anonymous"></script>
+    
+        <title>Projeto Lara - Gerenciamento de Resíduos</title>
+    </head>
+    
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <img src="/img/logo.png" alt="Logo do Grupo Lara"> </div>
+            <input type="checkbox"  id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+                <ul class="menu">
+                    <label for="chk" class="hide-menu-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+                    <div class="listas">
+                        <li class="lista">
+                            <a href="#" class="titleDropdown">
+                                Quem somos? <i class="fa-solid fa-caret-up triangulo"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="#">O Grupo</a></li>
+                                <li><a href="#">Missão, Visão e Valores</a></li>
+                                <li><a href="#">Responsabilidade Social</a></li>
+                            </ul>
+                        </li>                        
+                            <li class="lista"><a href="#" class="titleDropdown">Onde estamos? <i class="fa-solid fa-caret-up triangulo"></i></a>
+                            <ul class="dropdown">
+                                 <li><a href="#">Nossas Unidades</a></li>  
+                                 <li><a href="#">Nossos Números</a></li>  
+                            </ul>
+                            </li>
+                            <li class="lista"><a href="#" class="titleDropdown">Notícias <i class="fa-solid fa-caret-up triangulo"></i></a>
+                            <ul class="dropdown">
+                                 <li><a href="#">Boletim</a></li>  
+                            </ul>
+                            </li>
+                            <li class="lista"><a href="#" class="titleDropdown">Compilance</a>
+                            </li>
+                            <li class="lista"><a href="#" class="titleDropdown">Contato <i class="fa-solid fa-caret-up triangulo"></i></a>
+                            <ul class="dropdown">
+                                 <li><a href="#">Fale Conosco</a></li>  
+                                 <li><a href="#">Trabalhe Conosco</a></li>  
+                                 <li><a href="#">Imprensa</a></li>  
+                            </ul>
+                            </li>
+                            <li class="lista"><a href="#" class="titleDropdown"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                    </div>
+                </ul>  
+                </nav>  
+    </header>
+    <main>
+        <div class="carrossel">
+            <img src="/img/imagemPrincipal.png" alt="Imagem de Fundo">
+            <div class="texto" id="texto">
+                <p class="texto-title">Cuidando do seu futuro no presente</p>
+                <p class="texto-description">Para nós, do Grupo Lara, praticar hoje ações sustentáveis ajuda a garantir o futuro que queremos deixar para as próximas gerações. Por isso, trabalhamos além das fronteiras da operação e administração das exigências de mercado.</p>
+                <div class="indicadores">
+                    <span class="ellipse active"></span>
+                    <span class="ellipse"></span>
+                    <span class="ellipse"></span>
+                    <span class="ellipse"></span>
+                    <span class="ellipse"></span>
+                </div>
+            </div>
+            <button onclick="anterior()"><img src="./img/setaEsquerda.png" alt="setaEsquerda"></button>
+            <button onclick="proximo()"><img src="./img/setaDireita.png" alt="setaDireita"></button>
+            
+        </div>
+        
+    </main>
+    <footer>footer</footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+:root {
+    --azul: #00B3CE;  
+    --verde: #259E38; 
+    --laranja: #ED7237;    
+    --vinho: #842911; 
+    --amarelo: #FBD209;    
+    --rosa: #E73D63;  
+    --cinza: #F4F4F4;
+    --branco: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--branco);
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+    background-color: #842911;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+}
