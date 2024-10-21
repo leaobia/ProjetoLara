@@ -1,0 +1,27 @@
+.excelencia-vocacao-determinacao{
+    display: flex;
+    padding: 4% 8%;
+}
+.excelencia-vocacao-determinacao-gr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.excelencia-vocacao-determinacao-gr-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.excelencia-vocacao-determinacao-gr-text span{
+    font-size: 17px;
+    font-weight: 400;
+}
+.excelencia-vocacao-determinacao-gr-text h4{
+    font-size: 24px;
+}
+.excelencia-vocacao-determinacao-gr img{
+    background-color: var(--verde);
+    padding: 25%;
+    border-radius: 50%;
+}

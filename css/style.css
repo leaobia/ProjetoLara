@@ -33,7 +33,6 @@ header {
 main {
     grid-area: main;
     width: 100%;
-    background-color: #842911;
 }
 
 footer {

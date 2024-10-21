@@ -1,0 +1,11 @@
+.melhorarOMundo{
+    display: flex;
+    padding: 8%;
+    background-color: #F4F4F4;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.melhorarOMundo-text p{
+ margin-top: 2vh;
+}

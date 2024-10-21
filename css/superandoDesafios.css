@@ -1,0 +1,61 @@
+.superandoDesafios {
+    display: flex;
+    padding: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.pessoasFelizes {
+    width: 537px;
+    height: 358px; 
+    position: relative;
+    z-index: 1; 
+    border-radius: 0 50px 0 50px;
+}
+
+.superandoDesafiosImg {
+    position: relative; 
+}
+
+.planta-cima {
+    position: absolute;
+    top: -15%; 
+    right: -15%; 
+    z-index: 1000; 
+    width: 25%;
+    max-width: 150px; 
+    height: auto;
+}
+
+.planta-baixo {
+    position: absolute;
+    bottom: -15%; 
+    left: -10.5%; 
+    z-index: 1000; 
+    width: 25%;
+    max-width: 150px; 
+    height: auto; 
+}
+
+.superandoDesafios-text p{
+    margin-top: 2vh;
+}
+
+
+@media (max-width: 768px) {
+
+    .superandoDesafios{
+        flex-direction: column;
+    }
+    .pessoasFelizes {
+        width: 90%;
+        max-width: 537px; 
+        height: auto;
+    }
+
+    .planta-cima,
+    .planta-baixo {
+        width: 30%; 
+        max-width: 120px; 
+    }
+}
