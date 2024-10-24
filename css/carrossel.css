@@ -44,6 +44,12 @@
     cursor: pointer;
 }
 
+
+
+.carrossel button img {
+    width: 40px;
+    height: auto;
+}
 .carrossel button:nth-child(3) {
     left: 10px;
 }

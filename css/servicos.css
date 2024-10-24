@@ -1,0 +1,107 @@
+#servicosCarrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 0%;
+    gap: 5vh;
+}
+
+.servicosCarrossel-carrossel {
+    display: flex;
+    align-items: center;
+}
+
+#servicosCarrossel-texto{
+    max-width: 80%;
+}
+
+.btnCarrossel {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px; 
+}
+
+.imgcidade {
+    max-width: 900px; 
+    height: 75vh;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+    width: 100%;
+}
+
+.ellipse2 {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 0, 140, 0.2); 
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid rgba(255, 0, 140, 1);
+}
+
+.ellipse2.active {
+    background-color: rgba(255, 0, 140, 1); 
+}
+
+.servicos {
+    position: relative;
+}
+
+.servicosBtn {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    position: absolute;
+   top: -5%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 999; 
+}
+
+.servicosBtn button {
+    height: 65px; 
+    padding: 0 20px; 
+    color: #fFFF; 
+    font-weight: 700;
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+.servicosBtn button:nth-child(1) {
+    background-color: #E73D63;
+}
+.servicosBtn button:nth-child(2) {
+    background-color: #00B3CE;
+}
+.servicosBtn button:nth-child(3) {
+    background-color: #ED7237;
+}
+
+.ROSA{
+    background-color: #E73D63;
+}
+
+.AZUL{
+    background-color: #00B3CE;
+}
+
+.LARANJA{
+    background-color: #ED7237;
+}
+
+#servicosCarrossel-decoracao{
+    color: transparent;
+    width: 200px;
+    height: 6px;
+}
+
+.elevado {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}

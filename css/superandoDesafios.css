@@ -17,26 +17,6 @@
     position: relative; 
 }
 
-.planta-cima {
-    position: absolute;
-    top: -15%; 
-    right: -15%; 
-    z-index: 1000; 
-    width: 25%;
-    max-width: 150px; 
-    height: auto;
-}
-
-.planta-baixo {
-    position: absolute;
-    bottom: -15%; 
-    left: -10.5%; 
-    z-index: 1000; 
-    width: 25%;
-    max-width: 150px; 
-    height: auto; 
-}
-
 .superandoDesafios-text p{
     margin-top: 2vh;
 }
@@ -51,11 +31,5 @@
         width: 90%;
         max-width: 537px; 
         height: auto;
-    }
-
-    .planta-cima,
-    .planta-baixo {
-        width: 30%; 
-        max-width: 120px; 
     }
 }
