@@ -1,0 +1,35 @@
+#linksVerde{
+    display: flex;
+    padding: 4%;
+    background-color:#259E38 ;
+    color: var(--branco);
+}
+
+.linksVerdesGr{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.linksVerdesGr .img{
+    background-color: var(--amarelo);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+.linksVerdestext{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.linksVerdestext a{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    color: var(--amarelo);
+}

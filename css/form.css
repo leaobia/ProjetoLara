@@ -1,0 +1,102 @@
+.contact-form {
+    text-align: center;
+    padding: 5%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5vh;
+}
+
+.textForms{
+    text-align: center;
+    gap: 2vh;
+}
+.textForms p{
+    max-width: 700px;
+}
+.titleForms{
+    display: grid;
+    place-self: center;
+   width: fit-content;
+}
+.titleForms h1 {
+   font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.top-fields {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 60vw;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btnForm {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    display: grid;
+    place-self: end;
+}
+
+.btnForm:hover {
+    background-color: #218838;
+}
+
+.titleForms{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.titleForms img{
+    width: fit-content;
+}
+
+.textForms{
+    display: flex;
+    flex-direction: column;
+}
