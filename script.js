@@ -54,18 +54,22 @@ function anterior() {
 
 mostrarSlide(slideIndex);
 
+
 const slides2 = [
     {
         img: '/img/uberaba.png',
-        alt: 'UBERABA/MG'
+        alt: 'UBERABA/MG',
+        texto: 'Gestão e Operação de aterro sanitário, limpeza e conservação urbana, coleta domiciliar, varrição, gerenciamento de resíduos sólidos domiciliares classe II A II B.'
     },
     {
         img: '/img/portoAlegre.png',
-        alt: 'POUSO ALEGRE/MG'
+        alt: 'POUSO ALEGRE/MG',
+        texto: 'Gestão e Operação de aterro sanitário, gerenciamento de resíduos sólidos industriais e domiciliares classe II A II B.'
     },
     {
         img: '/img/mauá.png',
-        alt: 'MAUÁ'
+        alt: 'MAUÁ',
+        texto:'Gestão e Operação de aterro sanitário, gerenciamento e tratamento de resíduos de saúde, disposição de resíduos sólidos domiciliares e industriais classe II A II B e geração de energia e crédito de carbono.'
     }
 ];
 
@@ -74,8 +78,10 @@ function mostrarSlide2(index) {
     const elipses2 = document.querySelectorAll('.ellipse2');
     const botoes = document.querySelectorAll('.servicosBtn button'); 
     const decoracao = document.getElementById('servicosCarrossel-decoracao');
+    const servicosCarrosselTxt = document.getElementById('servicosCarrossel-texto');
 
     img.src = slides2[index].img;
+    servicosCarrosselTxt.textContent = slides2[index].texto; // Atualiza o texto do carrossel
 
     elipses2.forEach((ellipse, i) => {
         ellipse.classList.remove('active');
@@ -94,24 +100,22 @@ function mostrarSlide2(index) {
             botao.classList.remove('elevado'); 
         }
     });
-
-    console.log(cidadeNome);
     
+    // Atualiza a decoração conforme a cidade
     if (cidadeNome === 'MAUÁ') {
         decoracao.classList.add('ROSA'); 
-        decoracao.classList.remove('AZUL'); 
-        decoracao.classList.remove('LARANJA'); 
+        decoracao.classList.remove('AZUL', 'LARANJA'); 
     } else if (cidadeNome === 'POUSO ALEGRE/MG') {
         decoracao.classList.remove('ROSA'); 
         decoracao.classList.add('AZUL'); 
         decoracao.classList.remove('LARANJA'); 
     } else if (cidadeNome === 'UBERABA/MG') {
-        decoracao.classList.remove('ROSA'); 
-        decoracao.classList.remove('AZUL'); 
+        decoracao.classList.remove('ROSA', 'AZUL'); 
         decoracao.classList.add('LARANJA'); 
     }
 }
 
+// Funções para navegar pelos slides
 function proximo2() {
     slideIndex2 = (slideIndex2 + 1) % slides2.length;
     mostrarSlide2(slideIndex2);
@@ -121,4 +125,6 @@ function anterior2() {
     slideIndex2 = (slideIndex2 - 1 + slides2.length) % slides2.length;
     mostrarSlide2(slideIndex2);
 }
+
+// Inicia o carrossel no primeiro slide
 mostrarSlide2(slideIndex2);

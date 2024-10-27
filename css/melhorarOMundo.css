@@ -9,3 +9,11 @@
 .melhorarOMundo-text p{
  margin-top: 2vh;
 }
+@media (max-width: 768px) {
+    .melhorarOMundo{
+        flex-direction: column;
+    }
+    .melhorarOMundo img{
+        width: 50%;
+    }
+}

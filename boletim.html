@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/boletim.css">
+    <link rel="stylesheet" href="/css/maisLidas.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94e8bd423f.js" crossorigin="anonymous"></script>
+    <title>Projeto Lara</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <a href="/"><img src="/img/logo.png" alt="Logo do Grupo Lara"></a> </div>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+                <div class="listas">
+                    <li class="lista">
+                        <a href="#" class="titleDropdown">Quem somos? <i class="fa-solid fa-caret-up triangulo"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="linkReal">O Grupo</a></li>
+                            <li><a href="#" class="linkReal">Missão, Visão e Valores</a></li>
+                            <li><a href="#" class="linkReal">Responsabilidade Social</a></li>
+                        </ul>
+                    </li>
+                    <li class="lista"><a href="#" class="titleDropdown">Onde estamos? <i class="fa-solid fa-caret-up triangulo"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="linkReal">Nossas Unidades</a></li>
+                            <li><a href="#" class="linkReal">Nossos Números</a></li>
+                        </ul>
+                    </li>
+                    <li class="lista"><a href="#" class="titleDropdown">Notícias <i class="fa-solid fa-caret-up triangulo"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="boletim.html">Boletim</a></li>
+                        </ul>
+                    </li>
+                    <li class="lista"><a href="#" class="titleDropdown">Compliance</a></li>
+                    <li class="lista"><a href="#" class="titleDropdown">Contato <i class="fa-solid fa-caret-up triangulo"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Fale Conosco</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                        </ul>
+                    </li>
+                    <li class="lista search-icon">
+                        <a href="#" class="titleDropdown" onclick="toggleSearch()">
+                            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    
+                    
+                </div>
+                <div class="dropdown-links">
+                    <li><a href="#" class="linkReal">O Grupo</a></li>
+                    <li><a href="#" class="linkReal">Missão, Visão e Valores</a></li>
+                    <li><a href="#" class="linkReal">Responsabilidade Social</a></li>
+                    <li><a href="#" class="linkReal">Nossas Unidades</a></li>
+                    <li><a href="#" class="linkReal">Nossos Números</a></li>
+                    <li><a href="boletim.html">Boletim</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+            
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-box">
+            <input type="text" placeholder="Digite sua busca aqui...">
+            <div class="search-suggestions">
+                <p>SUGESTÕES DE BUSCA</p>
+                <a href="#">Consumo</a>
+                <a href="#">Meio Ambiente</a>
+                <a href="#">Pessoas</a>
+                <a href="#">Plantações</a>
+                <a href="#">Futuro</a>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="categoria">Meio Ambiente</div>
+            <div class="titulo">De olho em meio ambiente, SP recebe evento internacional de biodiversidade</div>
+            <div class="subtitulo">Evento tem expectativa atrair financiamentos na área ambiental e contará com
+                representantes do Banco Mundial</div>
+            <div class="autor">Por Grupo Lara | 10.06.2022 - 11h08</div>
+
+            <div class="icones">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#" class="email"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="compartilhe">Compartilhe</div>
+
+            <img src="img/colheita.png" alt="colheita" class="colheita">
+            <span class="legendaFoto">(FOTO: FG Trade/Getty Images)</span>
+        </div>
+        <div class="oucaAMateria">
+            <span>OUÇA A MATÉRIA</span>
+            <div class="audio-player">
+                <button class="play-button" onclick="toggleAudio()">▶</button>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <span class="time" id="time">0:00 / 0:00</span>
+            </div>
+        </div>
+
+        <div id="texto">
+            <p>Em meio às comemorações da Semana do Meio Ambiente, São Paulo recebe, a partir desta terça-feira, a
+                WBio2022, evento internacional voltado à biodiversidade. São cinco temas
+                estruturais: Governança,Cidades, Serviços Ecossistêmicos, Áreas Protegidas e Ciência.</p>
+            <p>Organizado pelo governo estadual e entidades como União Europeia e ONU, o encontro — que vai até quinta —
+                promete atrair investimentosrobustos para a área ambiental — entre eles, intercâmbios técnicos,
+                parcerias internacionais e oportunidades de aportes para projetos ambientais. </p>
+            <p>Além de pesquisadores e autoridades na área da biodiversidade, está prevista também a participação de
+                representantes do Banco Mundial, da Agência Francesa de Desenvolvimento e do Banco de Desenvolvimento e
+                do Banco de Desenvolvimento da América Latina.</p>
+            <p>Focada em reforçar o papel dos governos locais na conservação da biodiversidade e em trocar experiências
+                a fim de replicar ações bem-sucedidas, a WBio2022 tem como principal objetivo estruturar ações para a
+                implementação do Marco Global de Biodiversidade Pós-2020, da Convenção sobre Diversidade Biológica da
+                ONU. </p>
+                <div class="acompanheOGrupoLara">
+                    <h1>Acompanhe o Grupo Lara</h1>
+                    <p>Quer receber notícias frescas direto na sua caixa de entrada?</p>
+                    <div class="inputs">
+                        <input type="text" placeholder="Nome:">
+                        <input type="text" placeholder="E-mail:">
+                    </div>
+                    <button>ASSINAR</button>
+                </div>
+            <p>O Marco visa definir padrões para contabilizar perdas, ações para recuperar a fauna e a flora e fomentar
+                a participação da sociedade na implementação de políticas ambientais. </p>
+            <p>Em meio às comemorações da Semana do Meio Ambiente, São Paulo recebe, a partir desta terça-feira, a
+                WBio2022, evento internacional voltado à biodiversidade. São cinco temas
+                estruturais: Governança,Cidades, Serviços Ecossistêmicos, Áreas Protegidas e Ciência.</p>
+            <p>Organizado pelo governo estadual e entidades como União Europeia e ONU, o encontro — que vai até quinta —
+                promete atrair investimentosrobustos para a área ambiental — entre eles, intercâmbios técnicos,
+                parcerias internacionais e oportunidades de aportes para projetos ambientais. </p>
+            <p>Além de pesquisadores e autoridades na área da biodiversidade, está prevista também a participação de
+                representantes do Banco Mundial, da Agência Francesa de Desenvolvimento e do Banco de Desenvolvimento e
+                do Banco de Desenvolvimento da América Latina.</p>
+            <p>Focada em reforçar o papel dos governos locais na conservação da biodiversidade e em trocar experiências
+                a fim de replicar ações bem-sucedidas, a WBio2022 tem como principal objetivo estruturar ações para a
+                implementação do Marco Global de Biodiversidade Pós-2020, da Convenção sobre Diversidade Biológica da
+                ONU. </p>
+            <p>O Marco visa definir padrões para contabilizar perdas, ações para recuperar a fauna e a flora e fomentar
+                a participação da sociedade na implementação de políticas ambientais. </p>
+        </div>
+        <div class="tags">
+            TAGS:
+            <div class="tag-list">
+              <a href="#">MEIO AMBIENTE</a>
+              <a href="#">NATUREZA E MEIO AMBIENTE</a>
+              <a href="#">SUSTENTABILIDADE</a>
+              <a href="#">PLANTAS</a>
+              <a href="#">FLORESTA</a>
+              <a href="#">ONU</a>
+              <a href="#">BIODIVERSIDADE</a>
+            </div>
+          </div>
+        <div class="mais-lidas-container">
+            <div class="titleCTn">
+                <img src="/img/Rectangle.png" alt="retangulo">
+                <div class="titulo">Mais lidas</div>
+            </div>
+  
+            <div class="cards">
+            
+                <div class="card">
+                    <img src="/img/colheita.png" alt="Imagem notícia 1">
+                    <div class="card-content">
+                        <div class="categoria">Meio Ambiente</div>
+                        <div class="titulo-card">De olho em meio ambiente, SP recebe evento internacional de biodiversidade</div>
+                        <div class="descricao">Evento tem expectativa atrair financiamentos na área ambiental e contará com representantes do Banco Mundial</div>
+                        <div class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+               
+                <div class="card">
+                    <img src="/img/noticia2.png" alt="Imagem notícia 2">
+                    <div class="card-content">
+                        <div class="categoria">Meio Ambiente</div>
+                        <div class="titulo-card">Os estados campeões de destruição da Mata Atlântica</div>
+                        <div class="descricao">Com lei que alterou Código Florestal, bioma mais devastado do Brasil corre risco de viver aceleração na derrubada de floresta</div>
+                        <div class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+              
+                <div class="card">
+                    <img src="/img/noticia3.png" alt="Imagem notícia 3">
+                    <div class="card-content">
+                        <div class="categoria">Meio Ambiente</div>
+                        <div class="titulo-card">Países da América Latina e Caribe discutem bioeconomia em evento inédito</div>
+                        <div class="descricao">Representantes de 14 nações se reuniram para formular iniciativas que fortaleçam negócios a partir da biodiversidade na região</div>
+                        <div class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <img src="/img/logo.png" alt="Logo Grupo Lara">
+                </div>
+                <div class="footer-column">
+                    <h3>Quem Somos</h3>
+                    <ul>
+                        <li><a href="#">O Grupo</a></li>
+                        <li><a href="#">Missão, Visão e Valores</a></li>
+                        <li><a href="#">Responsabilidade Social</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Onde Estamos</h3>
+                    <ul>
+                        <li><a href="#">Nossas unidades</a></li>
+                        <li><a href="#">Nossos números</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Notícias</h3>
+                    <ul>
+                        <li><a href="boletim.html">Boletins</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>NOSSAS REDES SOCIAIS</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <button class="donation-button">FAÇA UMA DOAÇÃO</button>
+                </div>
+                <a href="#" class="back">Voltar para o topo <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottomGR">
+                <p>Grupo Lara Copyright (c) 2022. Todos os direitos Reservados</p>
+                <p>R. Ver. Waldemar Ferreira de Aguiar, 13 - Cruzeiro, Tanguá - CE, 62322-090</p>
+            </div>
+            <p>Desenvolvido pela ONK: Technology Agency.</p>
+        </div>
+    </footer>
+    <script src="/script2.js"></script>
+</body>
+
+</html>

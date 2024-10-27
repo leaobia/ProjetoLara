@@ -33,3 +33,9 @@
     align-items: center;
     color: var(--amarelo);
 }
+
+@media (max-width: 768px) {
+    #linksVerde{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,85 @@
+.mais-lidas-container {
+    width: 100%;
+    padding: 3%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.categoria {
+    color: #3DA33D;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.titulo-card {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.descricao {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.leia-mais {
+    font-size: 14px;
+    color: #3DA33D;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.leia-mais i {
+    font-size: 12px;
+}
+.titleCTn{
+    display: grid;
+    place-content: left;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

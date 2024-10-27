@@ -25,3 +25,10 @@
     padding: 25%;
     border-radius: 50%;
 }
+
+
+@media (max-width: 768px) {
+    .excelencia-vocacao-determinacao{
+        flex-direction: column;
+    }
+}

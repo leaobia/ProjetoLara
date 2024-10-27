@@ -26,6 +26,7 @@
 
     .superandoDesafios{
         flex-direction: column;
+        margin-top: 15vh;
     }
     .pessoasFelizes {
         width: 90%;
